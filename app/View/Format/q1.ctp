@@ -7,6 +7,7 @@ echo $this->Form->create('Type',
 		'type'=>'file',
 		'class'=>'',
 		'method'=>'POST',
+		'url' => array('controller' => 'Format', 'action' => 'q1_display'),
 		'autocomplete'=>'off',
 		'inputDefaults'=>array(
 			'label'=>false,
@@ -59,7 +60,7 @@ $this->Form->input('type',
 );
 ?>
 
-<?php echo $this->Form->end();?>
+<?php echo $this->Form->end('Save');?>
 
 </div>
 
