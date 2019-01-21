@@ -1,7 +1,13 @@
 <div id="message1">
 
 <?php
-echo "You selected: " . $this->request->data['Type']['type'];
+$type = $this->request->data['Type']['type'];
+if ($type == '') {
+	echo 'You did not select a type';
+}
+else {
+	echo "You selected: " . $type;
+}
 ?>
 
 </div>
