@@ -1,5 +1,5 @@
 <div class="row-fluid">
-	<table class="table table-bordered" id="table_orders">
+	<table class="table table-bordered" id="table_transactions">
 		<thead>
 			<tr>
 				<th style="width:10%">ID</th>
@@ -37,7 +37,7 @@
 <?php $this->start('script_own')?>
 <script>
 $(document).ready(function(){
-	$("#table_orders").dataTable({
+	$("#table_transactions").dataTable({
 
 	});
 })
